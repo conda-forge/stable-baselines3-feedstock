@@ -18,15 +18,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - cloudpickle
-    - gym >=0.17
+    - gym >=0.17,<0.20
     - matplotlib-base
     - numpy
     - pandas
-    - python >=3.6
-    - pytorch >=1.4.0
+    - python >=3.7
+    - pytorch >=1.8.1
 
 test:
   imports:
