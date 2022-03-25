@@ -5,7 +5,7 @@ Home: https://github.com/DLR-RM/stable-baselines3
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stable-baselines3-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stable-baselines3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pytorch version of Stable Baselines, implementations of reinforcement learning algorithms.
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13085&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stable-baselines3-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13085&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/stable-baselines3-feedstock?branchName=main">
       </a>
     </td>
   </tr>
