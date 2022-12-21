@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
   run:
     - cloudpickle
-    - gym >=0.17,<0.20
+    - gym =0.21
     - matplotlib-base
     - numpy
     - pandas
