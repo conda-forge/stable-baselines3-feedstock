@@ -21,12 +21,12 @@ requirements:
     - python >=3.7
   run:
     - cloudpickle
-    - gym =0.21
+    - gymnasium==0.28.1
     - matplotlib-base
-    - numpy
+    - numpy >=1.20
     - pandas
     - python >=3.7
-    - pytorch >=1.8.1
+    - pytorch >=1.11
 
 test:
   imports:
