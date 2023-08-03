@@ -1,6 +1,5 @@
 {% set name = "stable-baselines3" %}
-{% set version = "1.5.0" %}
-
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stable_baselines3-{{ version }}.tar.gz
-  sha256: a3707b7688e8d4f3257a565514fd2cacaadb5c5af5d1553a095a28cf81f5ca03
+  sha256: b9295c0744d4d153ec2fb51cde4977e188609e18ad3d8c65793daf2360d3171f
 
 build:
   number: 0
@@ -26,7 +25,8 @@ requirements:
     - numpy
     - pandas
     - python >=3.7
-    - pytorch >=1.8.1
+    - pytorch >=1.11
+    - importlib-metadata ~=4.13
 
 test:
   imports:
@@ -49,3 +49,4 @@ extra:
   recipe-maintainers:
     - YYYasin19
     - cyprienc
+    - pavelzw
