@@ -1,11 +1,11 @@
-About stable-baselines3
-=======================
+About stable-baselines3-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stable-baselines3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/DLR-RM/stable-baselines3
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/stable-baselines3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pytorch version of Stable Baselines, implementations of reinforcement learning algorithms.
 
@@ -147,5 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@YYYasin19](https://github.com/YYYasin19/)
 * [@cyprienc](https://github.com/cyprienc/)
+* [@pavelzw](https://github.com/pavelzw/)
 
