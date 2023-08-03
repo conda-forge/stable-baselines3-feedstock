@@ -1,5 +1,6 @@
 {% set name = "stable-baselines3" %}
-{% set version = "1.6.2" %}
+{% set version = "2.0.0" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/stable_baselines3-{{ version }}.tar.gz
-  sha256: b9295c0744d4d153ec2fb51cde4977e188609e18ad3d8c65793daf2360d3171f
+  sha256: 0b62b5148e8045c5d67f9f34d8de15c6248b325e15e5dcd931c88f236c735193
 
 build:
   number: 0
@@ -20,13 +21,12 @@ requirements:
     - python >=3.7
   run:
     - cloudpickle
-    - gym =0.21
+    - gymnasium ==0.28.1
     - matplotlib-base
-    - numpy
+    - numpy >=1.20
     - pandas
     - python >=3.7
     - pytorch >=1.11
-    - importlib-metadata ~=4.13
 
 test:
   imports:
