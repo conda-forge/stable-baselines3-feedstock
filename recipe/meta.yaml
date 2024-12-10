@@ -36,7 +36,7 @@ test:
     - pip check
   requires:
     - pip
-    - pyton {{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/DLR-RM/stable-baselines3
