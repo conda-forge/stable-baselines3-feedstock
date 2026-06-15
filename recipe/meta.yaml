@@ -1,5 +1,5 @@
 {% set name = "stable-baselines3" %}
-{% set version = "2.8.0" %}
+{% set version = "2.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stable_baselines3-{{ version }}.tar.gz
-  sha256: fe976d102b596c8001ca619638901721bcf97e8934a397e235b2d277fa9216c2
+  sha256: 92b46c6099a0e8f99163ff09e26729e4d0a68b33dc8598626ca13ade3c0b3a61
 
 build:
   noarch: python
