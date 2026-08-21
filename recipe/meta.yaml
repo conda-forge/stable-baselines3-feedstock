@@ -10,7 +10,7 @@ source:
   sha256: 92b46c6099a0e8f99163ff09e26729e4d0a68b33dc8598626ca13ade3c0b3a61
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: stable-baselines3
