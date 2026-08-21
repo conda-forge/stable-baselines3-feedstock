@@ -10,33 +10,47 @@ source:
   sha256: 92b46c6099a0e8f99163ff09e26729e4d0a68b33dc8598626ca13ade3c0b3a61
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
-requirements:
-  host:
-    - python {{ python_min }}
-    - pip
-    - setuptools
-  run:
-    - python >={{ python_min }}
-    - gymnasium >=0.29.1,<1.3.0
-    - numpy >=1.20,<3.0
-    - pytorch >=2.3,<3.0
-    - cloudpickle
-    - pandas
-    - matplotlib-base
+outputs:
+  - name: stable-baselines3
+    build:
+      noarch: python
+      script: {{ PYTHON }} -m pip install . -vv --no-deps
+    requirements:
+      host:
+        - python {{ python_min }}
+        - pip
+        - setuptools
+      run:
+        - python >={{ python_min }}
+        - gymnasium >=0.29.1,<2.0
+        - numpy >=1.20,<3.0
+        - pytorch >=2.8,<3.0
+        - cloudpickle
+    test:
+      imports:
+        - stable_baselines3
+        - stable_baselines3.a2c
+      commands:
+        - pip check
+      requires:
+        - pip
+        - python {{ python_min }}
 
-test:
-  imports:
-    - stable_baselines3
-    - stable_baselines3.a2c
-  commands:
-    - pip check
-  requires:
-    - pip
-    - python {{ python_min }}
+  - name: stable-baselines3-extra
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - {{ pin_subpackage('stable-baselines3', exact=True) }}
+        - pandas
+        - matplotlib-base
+    test:
+      imports:
+        - stable_baselines3
+        - pandas
+        - matplotlib
 
 about:
   home: https://github.com/DLR-RM/stable-baselines3
