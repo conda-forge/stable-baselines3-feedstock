@@ -1,18 +1,18 @@
 {% set name = "stable-baselines3" %}
-{% set version = "2.9.0" %}
+{% set version = "2.9.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/stable_baselines3-{{ version }}.tar.gz
-  sha256: 92b46c6099a0e8f99163ff09e26729e4d0a68b33dc8598626ca13ade3c0b3a61
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/stable_baselines3-{{ version }}.tar.gz
+  sha256: 8af267e9513343f481b3f0680b7740ad79a746873db24f18a9fb2edcbd9a2df7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  number: 1
+  number: 0
 
 requirements:
   host:
